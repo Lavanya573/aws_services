@@ -1,0 +1,15 @@
+
+1. Simple Hello World Task
+
+Name : HelloWorldStateMachine
+
+{
+  "StartAt": "HelloWorldTask",
+  "States": {
+    "HelloWorldTask": {
+      "Type": "Pass",
+      "Result": "Hello, AWS Step Functions!",
+      "End": true
+    }
+  }
+}
