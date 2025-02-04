@@ -1,0 +1,45 @@
+1) Create Step Function
+
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "Wait for Timer",
+  "States": {
+    "Wait for Timer": {
+      "Type": "Wait",
+      "SecondsPath": "$.timer_seconds",
+      "Next": "Success"
+    },
+    "Success": {
+      "Type": "Succeed"
+    }
+  }
+}
+
+
+{
+  "timer_seconds": 10
+}
+
+
+2) Wait for some time and invoke SNS send notification
+
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "Wait for Timestamp",
+  "States": {
+    "Wait for Timestamp": {
+      "Type": "Wait",
+      "SecondsPath": "$.timer_seconds",
+      "Next": "Send SNS Message"
+    },
+    "Send SNS Message": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sns:publish.waitForTaskToken",
+      "Parameters": {
+        "TopicArn":"arn:aws:sns:us-east-1:474668420577:EC2StateChange",
+        "Message.$":"$.message"
+      },
+      "End": true
+    }
+  }
+}
