@@ -1,0 +1,64 @@
+
+2. Let's build a gaming-related workflow that validates player scores using AWS Lambda and Step Functions.
+
+Scenario: Game Score Validation
+A player submits a score.
+If the score is above 50, the player wins.
+Otherwise, the player loses.
+The Step Function will trigger a Lambda function to check the score.
+
+a) Lambda Function : ValidatePlayerScore
+
+// Python
+
+import json
+
+def lambda_handler(event, context):
+    score = event.get("score", 0)
+    
+    if score > 50:
+        return {"message": "Player Wins!", "status": "win"}
+    else:
+        return {"message": "Player Loses!", "status": "lose"}
+
+
+Input 
+
+{
+    "score":55
+}
+
+// NodeJS
+
+export const handler = async (event) => {
+    const score = event.score || 0;
+
+    return {
+        statusCode: 200,
+        body: JSON.stringify({
+            message: score > 50 ? "Player Wins!" : "Player Loses!",
+            status: score > 50 ? "win" : "lose"
+        })
+    };
+};
+
+Input
+
+
+{
+    "score":55
+}
+
+
+Next Step Create Step function : PlayerScoreValidationStateMachine
+
+{
+  "StartAt": "Validate Score",
+  "States": {
+    "Validate Score": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:ap-south-1:474668420577:function:ValidatePlayerScore:$LATEST",
+      "End": true
+    }
+  }
+}
