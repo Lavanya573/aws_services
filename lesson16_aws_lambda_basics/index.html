@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Bills</title>
+</head>
+<body>
+  <h1>Bills</h1>
+  <button id="get-bills">Get Bills</button>
+  <ul id="bills-list"></ul>
+
+  <script>
+    document.getElementById('get-bills').addEventListener('click', function() {
+
+      const apiUrl = 'https://4snoms60zc.execute-api.us-east-1.amazonaws.com/development/billing';
+      
+      fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      })
+      .then(response => response.json())  // Convert the response to JSON
+      .then(data => {
+        // Check if status is 200 and there's data
+        if (data.status === 200 && Array.isArray(data.data)) {
+          const bills = data.data;  // Extract the bills array
+          
+          const billsList = document.getElementById('bills-list');
+          billsList.innerHTML = '';  // Clear any previous bills displayed
+
+          // Loop through the bills array and create list items
+          bills.forEach(bill => {
+            const li = document.createElement('li');
+            li.textContent = `Bill ID: ${bill.id}, Amount: $${bill.amount}`;
+            billsList.appendChild(li);
+          });
+        } else {
+          alert('No bills data found or invalid response.');
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching bills:', error);
+        alert('Error fetching bills');
+      });
+    });
+  </script>
+</body>
+</html>
