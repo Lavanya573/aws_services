@@ -1,0 +1,5 @@
+1) EventBridge Scheduler triggers the tournament start event every Sunday at 8 PM UTC.
+2) Step Functions manages the tournament workflow, tracking matches and updating the leaderboard.
+3) Lambda Functions process player performance and update scores in DynamoDB.
+4) EventBridge triggers an event to notify all players when the tournament ends.
+5) Step Functions distribute rewards based on final rankings.
