@@ -1,0 +1,41 @@
+sudo systemctl start docker
+
+sudo systemctl stop docker
+
+sudo systemctl restart docker
+
+sudo systemctl status docker
+
+//install git on ec2
+
+sudo yum install git -y
+
+git pull origin lesson22_docker
+
+docker build -t nodejs-crud-api .
+
+docker images
+
+docker run -p 3000:3000 nodejs-crud-api
+
+docker run -d -p 3000:3000 nodejs-crud-api // run in background
+
+docker ps
+
+curl http://localhost:3000
+
+curl http://ec2-34-239-141-57.compute-1.amazonaws.com:3000/users
+
+curl -sL https://rpm.nodesource.com/setup_16.x | sudo -E bash -
+sudo yum install -y nodejs
+
+node -v
+npm -v
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+source ~/.bashrc 
+
+nvm -v
+
+sudo npm install -g pm2
