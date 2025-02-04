@@ -1,0 +1,27 @@
+
+Logged in as root user -> IAM -> ec2user -> EC2FullAccess
+
+Launch Instances -> name : WebServer -> OS : Ubuntu -> 24.04 -> Instance Type -> t3.micro 
+
+-> create key -> name : ec2_secret_key -> generate key 
+
+chmod 777 -> 111 
+
+
+I want to run python program in EC2 machine
+
+sudo apt update && sudo apt upgrade -y
+
+sudo apt install python3 python3-pip -y
+
+sudo apt update
+
+sudo apt install python3-venv
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+mkdir myapp
+
+cd myapp
