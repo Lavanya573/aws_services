@@ -1,0 +1,10 @@
+1) Dynamo DB Create Table : Events
+
+ARN : arn:aws:dynamodb:ap-south-1:474668420577:table/Events
+
+
+2) Create IAM role for lambda to access dynamodb : DynamoExecution_Role
+
+lambda_dynamodb with execution access
+
+DynamoWrite_DeleteAccess : inline policy attached to the ARN
