@@ -1,0 +1,8 @@
+
+connect to public machine with ssh
+
+in another terminal connect to public machine and then via it connect to private
+
+sudo yum install git -y
+
+git clone https://github.com/lakshmikant-lpu/aws_services.git
