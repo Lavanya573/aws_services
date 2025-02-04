@@ -1,0 +1,27 @@
+connect to ec2 machine
+
+sudo apt update
+sudo apt install -y apache2
+
+sudo systemctl status apache2
+
+sudo journalctl -u apache2
+
+sudo lsof -i :80
+
+sudo mkdir /var/www/html/lpu
+
+sudo chmod -R 755 /var/www/html/lpu
+sudo chown -R www-data:www-data /var/www/html/lpu
+
+sudo tail -f /var/log/apache2/error.log
+
+sudo nano /var/www/html/lpu/index.html
+
+sudo nano /var/www/html/lpu/script.js
+
+sudo nano /var/www/html/lpu/styles.css
+
+sudo systemctl restart apache2
+
+go to => ippath/lpu (Example: http://ec2-54-87-143-48.compute-1.amazonaws.com/lpu/)
