@@ -1,0 +1,10 @@
+Problem Statement: Automating Daily Game Rewards Using AWS Services
+
+The goal is to automate the distribution of daily rewards to active players in a game at a specific time each day, 
+without manual intervention. 
+This process will be triggered automatically using EventBridge Scheduler and orchestrated through AWS Step Functions, 
+with the final execution handled by an AWS Lambda function.
+
+1. EventBridge Scheduler will be used to trigger the event at 12:00 AM UTC+5:30 every day using a cron expression.
+2. Step Functions will manage the flow of the event to ensure the reward distribution process is executed smoothly.
+3. The Lambda function will simulate the process of sending rewards, such as updating a database or notifying players.
