@@ -1,0 +1,28 @@
+Gaming Example 1 - EventBridge Scheduler to automatically schedule events.
+
+1) Scheduling Daily Game Rewards
+
+We want to send a daily reward to active players at a specific time, like 12:00 AM every day.
+Instead of manually triggering the event, we'll use EventBridge Scheduler to schedule it automatically.
+
+a) Create an EventBridge Scheduler Rule : DailyGameRewardsSchedule (Automatically send daily rewards to active players)
+
+cron expression : cron(0 0 * * ? *) // schedule the event at 12:00 AM UTC+5:30 every day.
+
+b) Create Lambda Function : SendGameReward
+
+import json
+
+def lambda_handler(event, context):
+    # Simulating sending rewards
+    print("Sending daily rewards to active players.")
+    
+    # Add your reward logic here (e.g., update a database with rewards)
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Daily rewards sent successfully')
+    }
+
+
+c) Target : SendGameReward
