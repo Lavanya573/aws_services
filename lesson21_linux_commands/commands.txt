@@ -1,0 +1,51 @@
+
+Connect to EC2 Linux Machine
+
+ssh -i "linux_key.pem" ec2-user@ec2-52-55-41-217.compute-1.amazonaws.com
+
+Command Lists
+
+1) pwd - present working directory
+2) cd - change directory
+    cd / # it takes to root directory
+3) ls - list files and directory
+    ls -l
+    ls -lh
+    ls -la
+4) find - search for files
+5) mkdir games
+6) cp source destination
+7) mv
+8) rm
+    rm -rd
+    rm -rf
+9) grep [options] pattern [file_list]
+10) awk [options] pattern action file
+    awk '{print $1, $2} file_name     
+11) sed [options] command file
+12) chmod 400 key.pem
+13) chown
+14) chgrp
+15) scp
+16) ps -> ps -ef | grep 'node' 
+17) top with pipe
+
+
+Tomorrow
+
+grep / awk / sed
+scp
+ls
+rm
+ps
+top
+wget
+curl
+ssh
+scp
+tar
+rsync 
+tail 
+less
+htop
+history with grep
