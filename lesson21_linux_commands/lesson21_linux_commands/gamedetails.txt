@@ -1,0 +1,49 @@
+
+1. Fortnite
+Data Collected: Player kills, win rate, matches played, total playtime, elimination count, damage dealt, materials gathered, and more.
+Usage: Fortnite is a free-to-play battle royale game with constant updates. Players often track their stats for personal progression, competitive ranking, and leaderboards.
+2. League of Legends
+Data Collected: KDA (Kills/Deaths/Assists), CS (Creep Score), gold earned, towers destroyed, win/loss ratio, match history, player rank.
+Usage: League’s stats are crucial for player rankings and matchmaking. Players typically track their stats to improve individual performance and climb the ladder.
+3. Valorant
+Data Collected: K/D (Kill/Death ratio), ACS (Average Combat Score), headshots, accuracy, rounds won, first bloods, and match wins.
+Usage: In competitive shooters like Valorant, stats are used for tracking individual performance, improving aim, and comparing players for ranked matchmaking.
+4. Call of Duty: Warzone
+Data Collected: Kills, wins, K/D ratio, damage dealt, time played, match placement, gulag wins, and loadout usage.
+Usage: Players use these stats to gauge their success rate in Warzone’s battle royale mode and track improvement over time.
+5. Apex Legends
+Data Collected: Kills, win rate, damage dealt, healing, revives, player legend usage, and matches played.
+Usage: Players often use these statistics to determine which characters or weapons they’re most effective with and assess their overall performance in ranked modes.
+6. Minecraft (Multiplayer)
+Data Collected: Hours played, player interactions, achievements unlocked, blocks mined, mobs killed, and items crafted.
+Usage: While the data is less competitive, players track progress and achievements in survival modes or team-based gameplay in multiplayer servers.
+7. Counter-Strike: Global Offensive (CS:GO)
+Data Collected: K/D ratio, MVPs, headshot percentage, matches won, win percentage, rank.
+Usage: CS:GO players are very performance-driven, and these statistics often reflect their skill level and overall game sense. Players also use stats to gauge how they stack up against others in competitive play.
+8. World of Warcraft (WoW)
+Data Collected: Character level, raid and dungeon completions, achievements, gold earned, PvP rating, and guild progression.
+Usage: WoW is known for its large-scale multiplayer gameplay, where players track their achievements, raid completions, and gear progression. These stats help track long-term progress.
+9. Rocket League
+Data Collected: Goals scored, assists, saves, win/loss ratio, MMR (Matchmaking Rating), aerials, and game types played.
+Usage: Rocket League players often track stats like goals and assists to improve their mechanical skills and increase their MMR for ranked play.
+10. Rainbow Six Siege
+Data Collected: Kills, deaths, win rate, headshots, operator stats, match performance, and ranked rating.
+Usage: Rainbow Six Siege’s tactical nature makes stats important for measuring individual performance and teamwork in both casual and ranked play.
+11. Overwatch 2
+Data Collected: K/D ratio, healing done, damage done, deaths, eliminations, objective kills, and win rate.
+Usage: As a team-based shooter, players use these stats to improve their role in the game (e.g., healer, damage dealer, tank) and overall team synergy.
+12. PUBG (PlayerUnknown’s Battlegrounds)
+Data Collected: Kills, damage, survival time, win rate, headshots, and weapon usage.
+Usage: PUBG is a battle royale game, so stats often help players track how close they are to achieving “chicken dinners” (victories) and how effectively they’re playing.
+13. Hearthstone
+Data Collected: Wins, losses, decks used, card collection, rank, and win streak.
+Usage: For Hearthstone players, tracking match results and decks is important for improving strategy and climbing the ranked ladder.
+14. Genshin Impact
+Data Collected: Character level, world level, artifact stats, damage dealt, achievements, and quests completed.
+Usage: Players track their progress in terms of character development and story completion. These stats can also help when preparing for high-level content or optimizing their characters.
+15. FIFA (EA Sports)
+Data Collected: Goals scored, assists, win percentage, player stats, team stats, and career stats.
+Usage: FIFA players track both individual and team performance, especially in ranked or competitive modes. The game also provides career stats for players in a long-term playthrough.
+16. League of Legends: Wild Rift
+Data Collected: KDA, CS, gold earned, win rate, matches played, rank.
+Usage: Similar to its PC counterpart, players use these stats to refine their strategies, improve mechanics, and advance in ranks.
